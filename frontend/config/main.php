@@ -7,6 +7,12 @@ $params = array_merge(
 );
 
 return [
+  'modules' => [
+    'gii' => [
+      'class' => 'yii\gii\Module', //adding gii module
+      'allowedIPs' => ['127.0.0.1', '::1']  //allowing ip's 
+    ],
+  ],
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
