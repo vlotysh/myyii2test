@@ -1,7 +1,9 @@
 <?php
 return [
     'bootstrap' => ['gii'],
-    'modules' => [
+    'modules' => ['cart' => [
+            'class' => 'frontend\modules\cart',
+        ],
         'gii' => 'yii\gii\Module',
     ],
 ];
