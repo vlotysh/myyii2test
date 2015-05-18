@@ -67,7 +67,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $connection = \Yii::$app->db;
+        $connection = \Yii::$app->db22;
         var_dump($connection);
         exit();
         return $this->render('index');
