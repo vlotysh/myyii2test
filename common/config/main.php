@@ -1,4 +1,5 @@
 <?php
+
 return [
 
 
@@ -8,9 +9,13 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-            'urlManager' => [
-        'enablePrettyUrl' => true,
-        'showScriptName' => false,
-    ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+                'about' => '/site/about',
+                'module/<module:\w+>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
+            ]
+        ],
     ],
 ];

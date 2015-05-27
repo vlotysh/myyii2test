@@ -10,12 +10,6 @@ return [
             'class' => 'yii\gii\Module', //adding gii module
             'allowedIPs' => ['127.0.0.1', '::1']  //allowing ip's 
         ],
-        'cart' => [
-            'class' => 'frontend\modules\cart',
-        ],
-        'payment' => [
-            'class' => 'frontend\modules\payment\payment',
-        ],
     ],
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
@@ -25,6 +19,10 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+        ],
+        'request' => [
+            'class' => 'common\components\Request',
+            'web' => '/frontend/web'
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
