@@ -10,6 +10,9 @@ return [
             'class' => 'yii\gii\Module', //adding gii module
             'allowedIPs' => ['127.0.0.1', '::1']  //allowing ip's 
         ],
+        'cart' => [
+            'class' => 'app\modules\cart\Module',
+        ],
     ],
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),

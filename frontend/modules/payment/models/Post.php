@@ -22,4 +22,8 @@ class Post extends Model{
         echo 'POST';
         
     }
+    
+    public function returnTrue() {
+        return true;
+    }
 }

@@ -21,7 +21,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "codeception/codeception" : "*",
         "codeception/specify":"*",
-	"codeception/verify":"*"
+	"codeception/verify":"*",
+        "oland-studio/yii2-myextension": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

@@ -1,5 +1,6 @@
 # yii console command
 /yii
+*.php.kate-swp
 #/frontend/web/assets
 #/backend/web/assets
 composer.lock
