@@ -67,8 +67,8 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-         echo \myextension\test\AutoloadExample::widget();
-        exit();
+      #   echo \myextension\test\AutoloadExample::widget();
+       # exit();
         $connection = \Yii::$app->db;
         return $this->render('index');
     }
